@@ -1,0 +1,52 @@
+/* Typography */
+@import url("https://use.typekit.net/kdm6dpf.css");
+
+
+$theme-primary: #FFE2DD;
+$theme-secondary: #282c34;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "proxima-nova", sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;  
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+
+

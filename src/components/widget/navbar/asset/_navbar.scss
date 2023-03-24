@@ -1,0 +1,12 @@
+.navbar{
+    height: 70px;
+    background-color: $theme-secondary;
+    opacity: 0.95;
+    @include placeCenter();
+
+    & .nav-container {
+        display: flex;
+        gap: 10px;
+    }
+}
+

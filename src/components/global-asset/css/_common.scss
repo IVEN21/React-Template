@@ -1,0 +1,45 @@
+@use "sass:map";
+
+@mixin placeCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+$breakpoints: (
+  ss: 375px,
+  // for small screen e.g. iphone x,5
+  ts: 450px,
+  // for typical screen e.g. iphone 6,7,8,13
+  ds: 520px,
+  // for desktop minimum screen size
+  t: 800px,
+  // for tablet
+  sd: 1300px,
+  // for small screen desktop
+  md: 1600px,
+  // for medium screen desktop
+  ld: 1920px,
+  // for large screen desktop
+);
+
+@mixin mq-d($key) {
+  $size: map-get($breakpoints, $key);
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin mq-c($value) {
+  @media (max-width: $value) {
+    @content;
+  }
+}
+
+@mixin mq-m($key) {
+  $size: map-get($breakpoints, $key);
+  @media (min-width: $size) {
+    @content;
+  }
+}
